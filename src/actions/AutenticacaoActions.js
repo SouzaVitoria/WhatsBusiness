@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import { Actions } from 'react-native-router-flux';
 
 export const modificaEmail = textEmail => {
  return {
@@ -31,9 +32,10 @@ export const cadastraUser = ({ name, email, password }) => {
 }
 
 const cadastroUserSuccess = dispatch => {
- dispatch({ type: 'sucesso' })
+ dispatch({ type: 'cadastro_user_success' });
+  Actions.formBoasVindas();
 }
 
 const cadastroUserError = (erro, dispatch) => {
- dispatch({ type: 'cadastro_user_error', payload: erro.message })
+ dispatch({ type: 'cadastro_user_error', payload: erro.message });
 }
