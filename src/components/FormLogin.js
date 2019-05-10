@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text, TextInput, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
-import { modificaEmail, modificaPassword } from '../actions/AutenticacaoActions'
+import { modificaEmail, modificaPassword, autenticarUser } from '../actions/AutenticacaoActions'
 
 const styles = StyleSheet.create({
    input: {
@@ -27,50 +27,63 @@ const styles = StyleSheet.create({
    }
 })
 
-const FormLogin = props => {
-   return (
-      <ImageBackground source={require('../imgs/bg.png')} style={{ flex: 1, width: null }}>
-         <View style={{ flex: 1, padding: 10 }}>
-            <View style={{ flex: 1.2, alignItems: 'center', justifyContent: 'center' }}>
-               <Text style={{ fontSize: 25, color: '#FFF' }}>WhatsBusiness</Text>
+class FormLogin extends Component {
+   _autenticarUser() {
+      const { email, password } = this.props;
+      this.props.autenticarUser({ email, password });
+   }
+
+   render() {
+      return (
+         <ImageBackground source={require('../imgs/bg.png')} style={{ flex: 1, width: null }}>
+            <View style={{ flex: 1, padding: 10 }}>
+               <View style={{ flex: 1.2, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 25, color: '#FFF', fontWeight: '700' }}>WhatsBusiness</Text>
+               </View>
+               <View style={{ flex: 2 }}>
+                  <TextInput
+                     placeholder='E-mail'
+                     placeholderTextColor='#FFF'
+                     value={this.props.email}
+                     onChangeText={textEmail => this.props.modificaEmail(textEmail)}
+                     style={styles.input}
+                  />
+                  <TextInput
+                     placeholder='Password'
+                     placeholderTextColor='#FFF'
+                     secureTextEntry
+                     value={this.props.password}
+                     onChangeText={textPassword => this.props.modificaPassword(textPassword)}
+                     style={styles.input}
+                  />
+                  <TouchableOpacity style={{ alignItems: 'center' }}
+                     onPress={() => { Actions.formCadastro(); }}>
+                     <Text style={{ fontSize: 20, color: '#FFF', textDecorationLine: 'underline', marginTop: 10 }}>Cadastre-se</Text>
+                  </TouchableOpacity>
+                  <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal:30, marginTop: 2 }}> { this.props.registerError } </Text>
+               </View>
+               <View style={{ flex: 2 }}>
+                  <TouchableOpacity
+                     style={styles.button}
+                     onPress={() => this._autenticarUser()}
+                  >
+                     <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Acessar</Text>
+                  </TouchableOpacity>
+               </View>
             </View>
-            <View style={{ flex: 2 }}>
-               <TextInput
-                  placeholder='E-mail'
-                  placeholderTextColor='#FFF'
-                  value={props.email}
-                  onChangeText={textEmail => props.modificaEmail(textEmail)}
-                  style={styles.input}
-               />
-               <TextInput
-                  placeholder='Password'
-                  placeholderTextColor='#FFF'
-                  secureTextEntry
-                  value={props.password}
-                  onChangeText={textPassword => props.modificaPassword(textPassword)}
-                  style={styles.input}
-               />
-               <TouchableOpacity style={{ alignItems: 'center' }}
-                  onPress={() => { Actions.formCadastro(); }}>
-                  <Text style={{ fontSize: 20, color: '#FFF', textDecorationLine: 'underline', marginVertical: 10 }}>Cadastre-se</Text>
-               </TouchableOpacity>
-            </View>
-            <View style={{ flex: 2 }}>
-               <TouchableOpacity style={styles.button}>
-                  <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Acessar</Text>
-               </TouchableOpacity>
-            </View>
-         </View>
-      </ImageBackground>
-   );
+         </ImageBackground>
+      );
+   }
+
 }
 
 const mapStateToProps = state => (
    {
       email: state.AutenticacaoReducer.email,
-      password: state.AutenticacaoReducer.password
+      password: state.AutenticacaoReducer.password,
+      registerError: state.AutenticacaoReducer.registerError
    }
 )
 
 
-export default connect(mapStateToProps, { modificaEmail, modificaPassword })(FormLogin);
+export default connect(mapStateToProps, { modificaEmail, modificaPassword, autenticarUser })(FormLogin);
