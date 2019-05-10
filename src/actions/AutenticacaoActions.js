@@ -1,24 +1,33 @@
 import firebase from 'firebase';
 import { Actions } from 'react-native-router-flux';
 import b64 from 'base-64';
+import {
+  MODIFICA_EMAIL,
+  MODIFICA_PASSWORD,
+  MODIFICA_NAME,
+  CADASTRO_USER_SUCCESS,
+  CADASTRO_USER_ERROR,
+  LOGIN_USER_SUCCESS,
+  LOGIN_USER_ERROR
+} from './Types';
 
 export const modificaEmail = textEmail => {
   return {
-    type: 'modifica_email',
+    type: MODIFICA_EMAIL,
     payload: textEmail
   }
 }
 
 export const modificaPassword = textPassword => {
   return {
-    type: 'modifica_password',
+    type: MODIFICA_PASSWORD,
     payload: textPassword
   }
 }
 
 export const modificaName = textName => {
   return {
-    type: 'modifica_name',
+    type: MODIFICA_NAME,
     payload: textName
   }
 }
@@ -37,12 +46,12 @@ export const cadastraUser = ({ name, email, password }) => {
 }
 
 const cadastroUserSuccess = dispatch => {
-  dispatch({ type: 'cadastro_user_success' });
+  dispatch({ type: CADASTRO_USER_SUCCESS });
   Actions.formBoasVindas();
 }
 
 const cadastroUserError = (erro, dispatch) => {
-  dispatch({ type: 'cadastro_user_error', payload: erro.message });
+  dispatch({ type: CADASTRO_USER_ERROR, payload: erro.message });
 }
 
 export const autenticarUser = ({ email, password }) => {
@@ -50,13 +59,14 @@ export const autenticarUser = ({ email, password }) => {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(value => {
         dispatch({
-          type: 'login_user_success'
-        })
+          type: LOGIN_USER_SUCCESS
+        });
+        Actions.formPrincipal();
       })
       .catch(erro => {
         erro,
           dispatch({
-            type: 'login_user_erro',
+            type: LOGIN_USER_ERROR,
             payload: erro.message
           })
       });
