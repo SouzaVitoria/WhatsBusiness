@@ -24,11 +24,11 @@ const styles = StyleSheet.create({
 });
 
 export default props => (
- <ImageBackground source={require('./imgs/bg.png')} style={{ flex: 1, width: null }}>
+ <ImageBackground source={require('../imgs/bg.png')} style={{ flex: 1, width: null }}>
  <View style={{ flex: 1, padding: 15 }}>
   <View style={styles.view}>
    <Text style={{ fontSize: 30, color: '#FFF', fontWeight: '400', padding: 10 }}> Welcome ! </Text>
-   <Image source={require( './imgs/logo.png' )} style={styles.image} /> 
+   <Image source={require( '../imgs/logo.png' )} style={styles.image} /> 
   </View>
   <View style={{ flex: 1 }}>
   <TouchableOpacity
