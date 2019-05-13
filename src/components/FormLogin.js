@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, ImageBackground, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, ImageBackground, StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
 import { modificaEmail, modificaPassword, autenticarUser } from '../actions/AutenticacaoActions'
@@ -33,6 +33,22 @@ class FormLogin extends Component {
       this.props.autenticarUser({ email, password });
    }
 
+   renderBtnAcessar() {
+      if (this.props.loadingLogin) {
+         return (
+            <ActivityIndicator size="large" />
+         )
+      }
+      return (
+         <TouchableOpacity
+            style={styles.button}
+            onPress={() => this._autenticarUser()}
+         >
+            <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Acessar</Text>
+         </TouchableOpacity>
+      )
+   }
+
    render() {
       return (
          <ImageBackground source={require('../imgs/bg.png')} style={{ flex: 1, width: null }}>
@@ -60,15 +76,10 @@ class FormLogin extends Component {
                      onPress={() => { Actions.formCadastro(); }}>
                      <Text style={{ fontSize: 20, color: '#FFF', textDecorationLine: 'underline', marginTop: 10 }}>Cadastre-se</Text>
                   </TouchableOpacity>
-                  <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal:30, marginTop: 2 }}> { this.props.registerError } </Text>
+                  <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginTop: 2 }}> {this.props.registerError} </Text>
                </View>
                <View style={{ flex: 2 }}>
-                  <TouchableOpacity
-                     style={styles.button}
-                     onPress={() => this._autenticarUser()}
-                  >
-                     <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Acessar</Text>
-                  </TouchableOpacity>
+                  {this.renderBtnAcessar()}
                </View>
             </View>
          </ImageBackground>
@@ -81,7 +92,8 @@ const mapStateToProps = state => (
    {
       email: state.AutenticacaoReducer.email,
       password: state.AutenticacaoReducer.password,
-      registerError: state.AutenticacaoReducer.registerError
+      registerError: state.AutenticacaoReducer.registerError,
+      loadingLogin: state.AutenticacaoReducer.loadingLogin
    }
 )
 

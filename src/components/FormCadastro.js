@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, TextInput, ImageBackground, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { View, TextInput, ImageBackground, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { modificaName, modificaEmail, modificaPassword, cadastraUser } from '../actions/AutenticacaoActions';
 
@@ -36,6 +36,23 @@ class FormCadastro extends Component {
   this.props.cadastraUser({ name, email, password });
  }
 
+ renderBtnCadastrar() {
+  if (this.props.loadingCadastro) {
+   return(
+    <ActivityIndicator size="large" />
+   )
+  }
+
+  return (
+   <TouchableOpacity
+    style={styles.button}
+    onPress={() => this._cadastraUser()}
+   >
+    <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}>Cadastrar</Text>
+   </TouchableOpacity>
+  )
+ }
+
  render() {
   return (
    <ImageBackground source={require('../imgs/bg.png')} style={{ flex: 1 }}>
@@ -63,21 +80,15 @@ class FormCadastro extends Component {
        onChangeText={textPassword => this.props.modificaPassword(textPassword)}
        style={styles.input}
       />
-      <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal:30, marginVertical: 10 }}> {this.props.registerError} </Text>
+      <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> {this.props.registerError} </Text>
      </View>
      <View style={{ flex: 2 }}>
-      <TouchableOpacity
-       style={styles.button}
-       onPress={() => this._cadastraUser()}
-      >
-       <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}>Cadastrar</Text>
-      </TouchableOpacity>
+      {this.renderBtnCadastrar()}
      </View>
     </View>
    </ImageBackground>
   );
  }
-
 }
 
 const mapStateToProps = state => (
@@ -85,7 +96,8 @@ const mapStateToProps = state => (
   name: state.AutenticacaoReducer.name,
   email: state.AutenticacaoReducer.email,
   password: state.AutenticacaoReducer.password,
-  registerError: state.AutenticacaoReducer.registerError
+  registerError: state.AutenticacaoReducer.registerError,
+  loadingCadastro: state.AutenticacaoReducer.loadingCadastro
  }
 )
 

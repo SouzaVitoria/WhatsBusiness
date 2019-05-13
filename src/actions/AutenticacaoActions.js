@@ -8,7 +8,9 @@ import {
   CADASTRO_USER_SUCCESS,
   CADASTRO_USER_ERROR,
   LOGIN_USER_SUCCESS,
-  LOGIN_USER_ERROR
+  LOGIN_USER_ERROR,
+  LOGIN_EM_ANDAMENTO,
+  CADASTRO_EM_ANDAMENTO
 } from './Types';
 
 export const modificaEmail = textEmail => {
@@ -34,6 +36,8 @@ export const modificaName = textName => {
 
 export const cadastraUser = ({ name, email, password }) => {
   return dispatch => {
+    dispatch({ type: CADASTRO_EM_ANDAMENTO });
+
     firebase.auth().createUserWithEmailAndPassword(email, password)
       .then(user => {
         let emailB64 = b64.encode(email);
@@ -56,11 +60,11 @@ const cadastroUserError = (erro, dispatch) => {
 
 export const autenticarUser = ({ email, password }) => {
   return dispatch => {
+    dispatch({ type: LOGIN_EM_ANDAMENTO });
+
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(value => {
-        dispatch({
-          type: LOGIN_USER_SUCCESS
-        });
+        dispatch({ type: LOGIN_USER_SUCCESS });
         Actions.formPrincipal();
       })
       .catch(erro => {
