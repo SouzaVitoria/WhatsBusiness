@@ -1,14 +1,41 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { TabView, SceneMap } from 'react-native-tab-view';
+import TabBarMenu from './TabBarMenu';
 
-class Principal extends Component {
- render(){
-  return(
-   <View>
-    <Text> Here main </Text>
-   </View>
-  )
+import Conversas from './Conversas';
+import Contatos from './Contatos';
+
+export default class Principal extends Component {
+ state = {
+  index: 0,
+  routes: [
+   { key: 'contatosPrincipal', title: 'Contatos' },
+   { key: 'conversasPrincipal', title: 'Conversas' },
+  ],
+ };
+
+ _handleChangeTab = index => this.setState({ index });
+ _renderHeader = props => <TabBarMenu {...props} style={{flex:1}} />;
+ _renderScene = SceneMap({
+  contatosPrincipal: Contatos,
+  conversasPrincipal: Conversas
+ })
+
+ render() {
+  return (
+   <TabView 
+    navigationState={this.state}
+    renderScene={this._renderScene}
+    renderTabBar = {this._renderHeader} 
+    onRequestChangeTab={this._handleChangeTab}
+    onIndexChange={this._handleChangeTab}
+   />
+  );
  }
 }
-
-export default Principal;
+const styles = StyleSheet.create({
+ scene: {
+  flex: 1,
+ },
+});
