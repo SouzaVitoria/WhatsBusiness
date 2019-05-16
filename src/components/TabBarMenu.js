@@ -2,11 +2,13 @@ import React from 'react';
 import { View, Text, StatusBar, StyleSheet, Image, TouchableOpacity, SafeAreaView } from 'react-native';
 import { TabBar } from 'react-native-tab-view';
 import { Actions } from 'react-native-router-flux';
+import { connect } from 'react-redux';
+import { habilitaInclusaoContato } from '../actions/AppActions';
 
-export default props => {
+const TabBarMenu = props => {
  return (
   <SafeAreaView style={styles.viewPrincipal}>
-   <StatusBar hidden />
+   <StatusBar />
    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
     <View style={styles.viewNavBarMenu}>
      <Text style={styles.textNavBarMenu}> WhatsBusiness </Text>
@@ -14,7 +16,11 @@ export default props => {
     <View style={{ flexDirection: 'row' }}>
      <View style={{ alignItems:'center'}}>
       <TouchableOpacity
-       onPress={() => Actions.formAdicionarContato()}
+       onPress={() => {
+        Actions.formAdicionarContato();
+        props.habilitaInclusaoContato();
+       }
+       }
        undarlayColor='#114D44'
       >
        <Image source={require('../imgs/adicionar-contato.png')} />
@@ -31,6 +37,8 @@ export default props => {
   </SafeAreaView>
  );
 }
+
+export default connect(null, {habilitaInclusaoContato})(TabBarMenu)
 
 const styles = StyleSheet.create({
  textNavBarMenu: {

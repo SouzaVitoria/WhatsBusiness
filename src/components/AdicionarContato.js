@@ -1,28 +1,62 @@
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 import { modificaAdicionaContatoEmail, adicionaContato } from '../actions/AppActions';
 
-const AdicionarContato = props => (
- <View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }} >
-  <TextInput
-   style={styles.input}
-   placeholder='E-mail'
-   color='#000'
-   value={props.adiciona_contato_email}
-   onChangeText={textoModificaAdicionaContato => props.modificaAdicionaContatoEmail(textoModificaAdicionaContato)}
-  />
-  <View>
-   <TouchableOpacity
-    style={styles.button}
-    onPress={() => props.adicionaContato(props.adiciona_contato_email)}
-   >
-    <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Salvar </Text>
-   </TouchableOpacity>
-   <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> {props.cadastro_resultado_txt_erro} </Text>
-  </View>
- </View>
-)
+class AdicionarContato extends Component {
+
+ _renderBtnSalvar() {
+  if (this.props.loadingAdicionaContato) {
+   return (
+     <ActivityIndicator/>
+   )
+  } else {
+   return (
+    <TouchableOpacity
+     style={styles.button}
+     onPress={() => this.props.adicionaContato(this.props.adiciona_contato_email)}
+    >
+     <Text style={{ color: '#fff', fontSize: 20, fontWeight: '500' }}> Salvar </Text>
+    </TouchableOpacity>
+   )
+  }
+ }
+
+ _renderAdicionarContato() {
+  if (!this.props.cadastro_resultado_inclusao) {
+   return (
+    <View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }}>
+     <TextInput
+      style={styles.input}
+      placeholder='E-mail'
+      color='#000'
+      value={this.props.adiciona_contato_email}
+      onChangeText={textoModificaAdicionaContato => this.props.modificaAdicionaContatoEmail(textoModificaAdicionaContato)}
+     />
+     <View>
+      {this._renderBtnSalvar()}
+      <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> {this.props.cadastro_resultado_txt_erro} </Text>
+     </View>
+    </View>
+
+   )
+  } else {
+   return (
+    <View style={{ flex: 1, backgroundColor: '#FFF' }}>
+     <Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> Contato adicionado com sucesso! </Text>
+    </View>
+   )
+  }
+ }
+
+ render() {
+  return (
+   <View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }} >
+    {this._renderAdicionarContato()}
+   </View>
+  )
+ }
+}
 
 const styles = StyleSheet.create({
  input: {
@@ -51,9 +85,10 @@ const styles = StyleSheet.create({
 const mapStateToProps = state => (
  {
   adiciona_contato_email: state.AppReducer.adiciona_contato_email,
-  cadastro_resultado_txt_erro: state.AppReducer.cadastro_resultado_txt_erro
+  cadastro_resultado_txt_erro: state.AppReducer.cadastro_resultado_txt_erro,
+  cadastro_resultado_inclusao: state.AppReducer.cadastro_resultado_inclusao,
+  loadingAdicionaContato: state.AppReducer.loadingAdicionaContato
  }
 )
-
 
 export default connect(mapStateToProps, { modificaAdicionaContatoEmail, adicionaContato })(AdicionarContato);

@@ -20,8 +20,6 @@ const INITIAL_STATE = {
 }
 
 export default (state = INITIAL_STATE, action) => {
-  //console.log(action)
-
   switch (action.type) {
     case MODIFICA_EMAIL:
       return { ...state, email: action.payload }
@@ -37,10 +35,10 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, name: '', password: '' }
     case LOGIN_USER_ERROR:
       return { ...state, registerError: action.payload, loadingLogin: false }
-      case LOGIN_EM_ANDAMENTO:
-      return {...state, loadingLogin: true}
-      case CADASTRO_EM_ANDAMENTO:
-      return{...state, loadingCadastro: true}
+    case LOGIN_EM_ANDAMENTO:
+      return { ...state, loadingLogin: true }
+    case CADASTRO_EM_ANDAMENTO:
+      return { ...state, loadingCadastro: true }
     default:
       return state;
   }
