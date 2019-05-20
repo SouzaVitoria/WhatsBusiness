@@ -28,16 +28,14 @@ class Contatos extends Component {
   renderRow(contato) {
     return (
       <TouchableOpacity
-        onPress={() => Actions.formConversa()}
+        onPress={(i) => Actions.formConversa(i)}
       >
         <View style={styles.viewPrincipal}>
           <Text style={styles.textNome}> {contato.name} </Text>
           <Text style={styles.textEmail}> {contato.email} </Text>
         </View>
       </TouchableOpacity>
-
     )
-
   }
   render() {
     return (

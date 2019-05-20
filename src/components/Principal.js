@@ -16,7 +16,7 @@ export default class Principal extends Component {
  };
 
  _handleChangeTab = index => this.setState({ index });
- _renderHeader = props => <TabBarMenu {...props} style={{flex:1}} />;
+ _renderHeader = props => <TabBarMenu {...props} style={{ flex: 1 }} />;
  _renderScene = SceneMap({
   contatosPrincipal: Contatos,
   conversasPrincipal: Conversas
@@ -24,18 +24,13 @@ export default class Principal extends Component {
 
  render() {
   return (
-   <TabView 
+   <TabView
     navigationState={this.state}
     renderScene={this._renderScene}
-    renderTabBar = {this._renderHeader} 
+    renderTabBar={this._renderHeader}
     onRequestChangeTab={this._handleChangeTab}
     onIndexChange={this._handleChangeTab}
    />
   );
  }
 }
-const styles = StyleSheet.create({
- scene: {
-  flex: 1,
- },
-});

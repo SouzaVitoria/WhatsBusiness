@@ -1,0 +1,191 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.59.5] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/83ca3323f2bd7e4f2fc802478361ce6e/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d7e5264c3828a72ad3b84e1f0926f5f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/84f61e79e70993cfb81bcae21bc5b6b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a573d5ee69a3ac24ff7bf5dc06aecd3f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/739d7901eaedf85c89be9a09dcb4d5d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/71caf8bad152bf41d4e5bbb700ff8078/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ca6c20b0e0e8e936b554c592145d3454/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2d661d7ee44ad1dacb30156e9986ddd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/10469dcaba9acdeda29f986bcac008ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8bffffb4f97642fe70e0419e36d44eda/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/10b3e02550c47aab8ab76e602f67d883/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/474e7ef2336bb49457180c5193e08dce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0fdee9d77752831e7c432e844f5c9295/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/78f53ae820e7ca407c574826e1b74bed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ac71d0bae10551d9d1a55fa7ffa5156c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb1596faa7c1a150e9d202833842b0ef/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fa1a3df01bf741294629291d0109a4f0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/daa67ea75bb3af8f59f1f200e81919e8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2a02260eab2f285f68aa5f9a6f2cddca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/413ed558476dbdaa0b6121670d492f33/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/18f494e14bd85a527731e137a95d451e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba7e7ba4d7082d55feab7da5fc9a9ca9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4a52cf4cdc2d38ad8d761d012c0a68bb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/917d841a6a125e6694817c97e4428437/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e590e6cae5335eabad6f770f80c4673f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab0f868d91651c3ae38c8851a942eee4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/787e6e1c91fa8542a34b7c608f7baf38/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4668aefdefa973a8d3b2654f0d6c45d3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/35d7b238a6d9539968a9ebaa4c2f86c8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/78327db71feb827913289c72aa36eb9a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7b5f372344fa80ceb69939d1fbf44458/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/d77cc2a317d07d38b5ef3b297c09bf52/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/ef0b33941306bfbd2bc58a3b8f9cb971/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:2:3-30
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:6:5-24:19
+MERGED from [com.facebook.react:react-native:0.59.5] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/83ca3323f2bd7e4f2fc802478361ce6e/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.59.5] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/83ca3323f2bd7e4f2fc802478361ce6e/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb1596faa7c1a150e9d202833842b0ef/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb1596faa7c1a150e9d202833842b0ef/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/d77cc2a317d07d38b5ef3b297c09bf52/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/d77cc2a317d07d38b5ef3b297c09bf52/AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:8:7-39
+	android:roundIcon
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:10:7-52
+	android:icon
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:9:7-41
+	android:allowBackup
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:7:7-38
+activity#com.whatsbusiness.MainActivity
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.59.5] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/83ca3323f2bd7e4f2fc802478361ce6e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.59.5] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/react-native-0.59.5.aar/83ca3323f2bd7e4f2fc802478361ce6e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d7e5264c3828a72ad3b84e1f0926f5f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d7e5264c3828a72ad3b84e1f0926f5f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/84f61e79e70993cfb81bcae21bc5b6b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/84f61e79e70993cfb81bcae21bc5b6b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a573d5ee69a3ac24ff7bf5dc06aecd3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a573d5ee69a3ac24ff7bf5dc06aecd3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/739d7901eaedf85c89be9a09dcb4d5d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/739d7901eaedf85c89be9a09dcb4d5d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/71caf8bad152bf41d4e5bbb700ff8078/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/71caf8bad152bf41d4e5bbb700ff8078/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ca6c20b0e0e8e936b554c592145d3454/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/ca6c20b0e0e8e936b554c592145d3454/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2d661d7ee44ad1dacb30156e9986ddd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2d661d7ee44ad1dacb30156e9986ddd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/10469dcaba9acdeda29f986bcac008ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/10469dcaba9acdeda29f986bcac008ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8bffffb4f97642fe70e0419e36d44eda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8bffffb4f97642fe70e0419e36d44eda/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/10b3e02550c47aab8ab76e602f67d883/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/10b3e02550c47aab8ab76e602f67d883/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/474e7ef2336bb49457180c5193e08dce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/474e7ef2336bb49457180c5193e08dce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0fdee9d77752831e7c432e844f5c9295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0fdee9d77752831e7c432e844f5c9295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/78f53ae820e7ca407c574826e1b74bed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/78f53ae820e7ca407c574826e1b74bed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ac71d0bae10551d9d1a55fa7ffa5156c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ac71d0bae10551d9d1a55fa7ffa5156c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/47ebeae8ab1bc3a3cbdbef453dce93ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb1596faa7c1a150e9d202833842b0ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/cb1596faa7c1a150e9d202833842b0ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fa1a3df01bf741294629291d0109a4f0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/fa1a3df01bf741294629291d0109a4f0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/daa67ea75bb3af8f59f1f200e81919e8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/daa67ea75bb3af8f59f1f200e81919e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2a02260eab2f285f68aa5f9a6f2cddca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/2a02260eab2f285f68aa5f9a6f2cddca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/413ed558476dbdaa0b6121670d492f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/413ed558476dbdaa0b6121670d492f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/18f494e14bd85a527731e137a95d451e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/18f494e14bd85a527731e137a95d451e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba7e7ba4d7082d55feab7da5fc9a9ca9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba7e7ba4d7082d55feab7da5fc9a9ca9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4a52cf4cdc2d38ad8d761d012c0a68bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4a52cf4cdc2d38ad8d761d012c0a68bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/917d841a6a125e6694817c97e4428437/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/917d841a6a125e6694817c97e4428437/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e590e6cae5335eabad6f770f80c4673f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e590e6cae5335eabad6f770f80c4673f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab0f868d91651c3ae38c8851a942eee4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ab0f868d91651c3ae38c8851a942eee4/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/787e6e1c91fa8542a34b7c608f7baf38/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/787e6e1c91fa8542a34b7c608f7baf38/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4668aefdefa973a8d3b2654f0d6c45d3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/4668aefdefa973a8d3b2654f0d6c45d3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/35d7b238a6d9539968a9ebaa4c2f86c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/35d7b238a6d9539968a9ebaa4c2f86c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/78327db71feb827913289c72aa36eb9a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/78327db71feb827913289c72aa36eb9a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7b5f372344fa80ceb69939d1fbf44458/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/7b5f372344fa80ceb69939d1fbf44458/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/d77cc2a317d07d38b5ef3b297c09bf52/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/d77cc2a317d07d38b5ef3b297c09bf52/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/ef0b33941306bfbd2bc58a3b8f9cb971/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/vitoriasouzaluiz/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/ef0b33941306bfbd2bc58a3b8f9cb971/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/vitoriasouzaluiz/Documents/ProjetosRN/WhatsBusiness/android/app/src/main/AndroidManifest.xml

@@ -1,4 +1,10 @@
-import { MODIFICA_ADICIONA_CONTATO_EMAIL, ADICIONA_CONTATO_ERRO, ADICIONA_CONTATO_SUCESSO, lISTA_CONTATO_USER } from '../actions/Types';
+import {
+  MODIFICA_ADICIONA_CONTATO_EMAIL,
+  ADICIONA_CONTATO_ERRO,
+  ADICIONA_CONTATO_SUCESSO,
+  lISTA_CONTATO_USER,
+  MODIFICA_MENSAGEM
+} from '../actions/Types';
 import firebase from 'firebase';
 import b64 from 'base-64';
 import _ from 'lodash';
@@ -20,7 +26,7 @@ export const adicionaContato = email => {
       .then(snapshot => {
         if (snapshot.val()) {
           const dadosUser = _.first(_.values(snapshot.val()));
-          
+
           const { currentUser } = firebase.auth();
           let emailUsuarioB64 = b64.encode(currentUser.email);
 
@@ -70,4 +76,11 @@ export const contatosUsersFetch = () => {
         dispatch({ type: lISTA_CONTATO_USER, payload: snapshot.val() })
       })
   }
+}
+
+export const modificaMensagem = texto => {
+  return ({
+    type: MODIFICA_MENSAGEM,
+    payload: texto
+  })
 }

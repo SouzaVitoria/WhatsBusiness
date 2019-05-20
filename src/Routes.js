@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Scene } from 'react-native-router-flux';
+import { Router, Scene, Stack } from 'react-native-router-flux';
 
 import FormLogin from './components/FormLogin';
 import FormCadastro from './components/FormCadastro';
@@ -13,14 +13,14 @@ const Routes = () => (
     sceneStyle={{ backgroundColor: '#115E54' }}
     titleStyle={{ color: '#000' }}
   >
-    <Scene>
-      <Scene key='formCadastro' component={FormCadastro} title='Cadastro' hideNavBar={false} />
-      <Scene key='formLogin' component={FormLogin} title='Login' hideNavBar={true}  />
-      <Scene key='formBoasVindas' component={BoasVindas} title='Welcome' hideNavBar={true} />
-      <Scene key='formPrincipal' component={Principal} title='Main' hideNavBar={true} />
-      <Scene key='formAdicionarContato' component={AdicionarContatos} title='Adicionar Contatos' hideNavBar={false} />
-      <Scene key='formConversa' component={Conversa} title='Conversa' hideNavBar={false} initial />
-    </Scene>
+    <Stack key="root" navigationBarStyle={{ backgroundColor: '#115E54', color:"#FFF" }}>
+      <Scene key='formLogin' component={FormLogin} title='Login' hideNavBar initial />
+      <Scene key='formCadastro' component={FormCadastro} title='Cadastro' hideNavBar />
+      <Scene key='formBoasVindas' component={BoasVindas} title='Welcome' hideNavBar />
+      <Scene key='formPrincipal' component={Principal} title='Main' hideNavBar />
+      <Scene key='formAdicionarContato' component={AdicionarContatos} title='Adicionar Contatos' />
+      <Scene key='formConversa' component={Conversa} title='Conversa' />
+    </Stack>
   </Router>
 );
 
