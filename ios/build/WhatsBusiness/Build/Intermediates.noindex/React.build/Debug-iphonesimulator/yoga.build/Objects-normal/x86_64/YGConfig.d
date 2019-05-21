@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.cpp \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGMarker.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/CompactValue.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGValue.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.cpp \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGConfig.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGMarker.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGMacros.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/Yoga-internal.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/CompactValue.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGValue.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/YGEnums.h \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/yoga/yoga/Yoga.h

@@ -10,12 +10,15 @@ import Conversa from './components/Conversa';
 
 const Routes = () => (
   <Router
-    sceneStyle={{ backgroundColor: '#115E54' }}
-    titleStyle={{ color: '#000' }}
+
   >
-    <Stack key="root" navigationBarStyle={{ backgroundColor: '#115E54', color:"#FFF" }}>
+    <Stack
+      key="root"
+      navigationBarStyle={{ backgroundColor: '#115E54' }}
+      titleStyle={{ color: 'white', fontSize: 20, paddingHorizontal: 15 }}
+    >
       <Scene key='formLogin' component={FormLogin} title='Login' hideNavBar initial />
-      <Scene key='formCadastro' component={FormCadastro} title='Cadastro' hideNavBar />
+      <Scene key='formCadastro' component={FormCadastro} title='Cadastro' hideNavBar={false} />
       <Scene key='formBoasVindas' component={BoasVindas} title='Welcome' hideNavBar />
       <Scene key='formPrincipal' component={Principal} title='Main' hideNavBar />
       <Scene key='formAdicionarContato' component={AdicionarContatos} title='Adicionar Contatos' />

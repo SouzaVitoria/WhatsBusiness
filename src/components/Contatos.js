@@ -28,7 +28,7 @@ class Contatos extends Component {
   renderRow(contato) {
     return (
       <TouchableOpacity
-        onPress={(i) => Actions.formConversa(i)}
+        onPress={() => Actions.formConversa({ title: contato.name, contatoNome: contato.name, contatoEmail: contato.email})}
       >
         <View style={styles.viewPrincipal}>
           <Text style={styles.textNome}> {contato.name} </Text>

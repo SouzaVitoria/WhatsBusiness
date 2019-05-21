@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
-  /Users/vitoriasouza/Documents/ProjetosRN/WhatsBusiness/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.cpp \
+  /Users/vitoriasouzaluiz/Documents/GitHub/WhatsBusiness/node_modules/react-native/ReactCommon/cxxreact/ReactMarker.h

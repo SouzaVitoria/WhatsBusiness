@@ -38,38 +38,6 @@
 			<key>uniqueIdentifier</key>
 			<string>03C31681-74BC-49A4-B9F5-959B80D19FA9</string>
 		</dict>
-		<key>1CEADE60-BD97-4BEB-A7A8-93AA62713C27</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>1CEADE60-BD97-4BEB-A7A8-93AA62713C27.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>WhatsBusiness project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>WhatsBusiness</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project WhatsBusiness with scheme WhatsBusiness and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>579813483.94027996</real>
-			<key>timeStoppedRecording</key>
-			<real>579813491.60362601</real>
-			<key>title</key>
-			<string>Building project WhatsBusiness with scheme WhatsBusiness and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>1CEADE60-BD97-4BEB-A7A8-93AA62713C27</string>
-		</dict>
 	</dict>
 </dict>
 </plist>
