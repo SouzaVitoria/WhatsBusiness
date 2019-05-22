@@ -1,19 +1,52 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { connect } from 'react-redux'
-import { modificaMensagem, enviarMensagem } from '../actions/AppActions'
+import { View, Text, TextInput, Image, StyleSheet, TouchableOpacity, ListView } from 'react-native';
+import { connect } from 'react-redux';
+import _ from 'lodash';
+import { modificaMensagem, enviarMensagem, conversaUsuarioFetch } from '../actions/AppActions';
+
 
 class Conversa extends Component {
+
+    componentWillMount() {
+        this.props.conversaUsuarioFetch(this.props.contatoEmail);
+        this.criaFonteDeDados(this.props.conversa);
+        console.log("componentWill -> ", this.props.conversaUsuarioFetch(this.props.contatoEmail))
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.criaFonteDeDados(nextProps.conversa);
+        console.log("recente -> ", this.criaFonteDeDados(nextProps.conversa))
+    }
+
+
     _enviaMensagem() {
         const { mensagem, contatoNome, contatoEmail } = this.props;
         this.props.enviarMensagem(mensagem, contatoNome, contatoEmail)
+    }
+
+    criaFonteDeDados(conversa) {
+        const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+        this.dataSource = ds.cloneWithRows(conversa)
+    }
+
+    renderRow(texto) {
+        return (
+            <View>
+                <Text> {texto.mensagem}</Text>
+                <Text> {texto.tipo}</Text>
+            </View>
+        )
     }
 
     render() {
         return (
             <View style={styles.viewPrincipal}>
                 <View style={{ flex: 1, marginBottom: 20 }}>
-                    <Text>oi</Text>
+                    <ListView
+                        enableEmptySections
+                        dataSource={this.dataSource}
+                        renderRow={this.renderRow}
+                    />
                 </View>
                 <View style={styles.viewInputImage}>
                     <TextInput
@@ -62,9 +95,17 @@ const styles = StyleSheet.create({
 });
 
 mapStateToProps = state => {
+    const conversa = _.map(state.ListaConversaReducer, (val, uid) => {
+        return { ...val, uid };
+    });
+
+    console.log("+ lodash -> ", conversa);
+    console.log("- lodash -> ", state.ListaConversaReducer)
+
     return ({
-        mensagem: state.AppReducer.mensagem
+        mensagem: state.AppReducer.mensagem,
+        conversa
     })
 }
 
-export default connect(mapStateToProps, { modificaMensagem, enviarMensagem })(Conversa);
+export default connect(mapStateToProps, { modificaMensagem, enviarMensagem, conversaUsuarioFetch })(Conversa);

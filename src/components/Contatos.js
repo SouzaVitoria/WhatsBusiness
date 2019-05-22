@@ -13,14 +13,14 @@ class Contatos extends Component {
 
   componentWillMount() {
     this.props.contatosUsersFetch();
-    this.criaFundoDeDados(this.props.contatos);
+    this.criaFonteDeDados(this.props.contatos);
   }
 
   componentWillReceiveProps(nextProps) {
-    this.criaFundoDeDados(nextProps.contatos);
+    this.criaFonteDeDados(nextProps.contatos);
   }
 
-  criaFundoDeDados(contatos) {
+  criaFonteDeDados(contatos) {
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.fonteDeDados = ds.cloneWithRows(contatos)
   }
@@ -50,11 +50,9 @@ class Contatos extends Component {
 }
 
 mapStatesToProps = state => {
-  //console.log("state--> ", state.ListaContatosReducer)
   const contatos = _.map(state.ListaContatosReducer, (val, uid) => {
     return { ...val, uid }
   })
-  //console.log(contatos)
   return { contatos: contatos }
 }
 
