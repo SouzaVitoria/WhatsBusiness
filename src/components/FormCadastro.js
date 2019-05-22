@@ -68,7 +68,7 @@ class FormCadastro extends Component {
       <TextInput
        placeholder='E-mail'
        placeholderTextColor='#FFF'
-       value={this.props.email}
+       value={this.props.email.toLowerCase()}
        onChangeText={textEmail => this.props.modificaEmail(textEmail)}
        style={styles.input}
       />

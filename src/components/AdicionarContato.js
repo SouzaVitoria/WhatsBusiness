@@ -30,7 +30,7 @@ class AdicionarContato extends Component {
       style={styles.input}
       placeholder='E-mail'
       color='#000'
-      value={this.props.adiciona_contato_email}
+      value={this.props.adiciona_contato_email.toLowerCase()}
       onChangeText={textoModificaAdicionaContato => this.props.modificaAdicionaContatoEmail(textoModificaAdicionaContato)}
      />
      <View>

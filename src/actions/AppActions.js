@@ -87,6 +87,8 @@ export const modificaMensagem = texto => {
 
 export const enviarMensagem = (mensagem, contatoNome, contatoEmail) => {
   const { currentUser } = firebase.auth();
+  console.log("Email do usuario logado--> ", currentUser.email)
+  console.log("Contato do email --> ", contatoEmail)
 
   return dispatch => {
     const usuarioEmailB64 = b64.encode(currentUser.email);
