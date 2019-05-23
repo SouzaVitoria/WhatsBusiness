@@ -10,7 +10,6 @@ class Conversa extends Component {
     componentWillMount() {
         this.props.conversaUsuarioFetch(this.props.contatoEmail);
         this.criaFonteDeDados(this.props.conversa);
-        console.log("componentWill -> ", this.props.conversaUsuarioFetch(this.props.contatoEmail))
     }
 
     componentWillReceiveProps(nextProps) {
@@ -98,9 +97,6 @@ mapStateToProps = state => {
     const conversa = _.map(state.ListaConversaReducer, (val, uid) => {
         return { ...val, uid };
     });
-
-    console.log("+ lodash -> ", conversa);
-    console.log("- lodash -> ", state.ListaConversaReducer)
 
     return ({
         mensagem: state.AppReducer.mensagem,

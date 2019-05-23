@@ -12,8 +12,8 @@ import {
 
 const INITIAL_STATE = {
   name: '',
-  email: '',
-  password: '',
+  email: 'vitoria@its4.com',
+  password: '123456',
   registerError: '',
   loadingLogin: false,
   loadingCadastro: false

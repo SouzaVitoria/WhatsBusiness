@@ -36,7 +36,6 @@ export const adicionaContato = email => {
             .then(() => adicionaContatoSucesso(dispatch))
             .catch(erro => adicionaContatoErro(erro.message, dispatch))
 
-          //email do usuario autenticado
           console.log(firebase.auth().currentUser.email);
 
         } else {
@@ -72,7 +71,6 @@ export const contatosUsersFetch = () => {
     let emailUsuarioB64 = b64.encode(currentUser.email);
     firebase.database().ref(`/usuario_contatos/${emailUsuarioB64}`)
       .on('value', snapshot => {
-        //console.log(snapshot.val());
         dispatch({ type: lISTA_CONTATO_USER, payload: snapshot.val() })
       })
   }
