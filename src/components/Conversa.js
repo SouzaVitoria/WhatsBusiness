@@ -13,6 +13,9 @@ class Conversa extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
+		if(this.props.contatoEmail != nextProps.contatoEmail){
+			this.props.actions.conversaUsuarioFetch(nextProps.contatoEmail);
+		}
 		this.criaFonteDeDados(nextProps.conversa);
 	}
 
@@ -56,13 +59,15 @@ class Conversa extends Component {
 					<TextInput
 						style={styles.input}
 						placeholder='Write here'
-						placeholderTextColor='#000'
+						placeholderTextColor='#adadad'
 						value={this.props.mensagem}
 						onChangeText={texto => this.props.actions.modificaMensagem(texto)}
 					/>
 					<TouchableOpacity
 						style={styles.image}
-						onPress={this._enviaMensagem.bind(this)}
+						onPress={
+							this._enviaMensagem.bind(this)
+						}
 					>
 						<Image source={require('../imgs/enviar_mensagem.png')} />
 					</TouchableOpacity>
