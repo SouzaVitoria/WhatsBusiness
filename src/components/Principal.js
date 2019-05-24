@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 import TabBarMenu from './TabBarMenu';
-
 import Conversas from './Conversas';
 import Contatos from './Contatos';
 

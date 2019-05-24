@@ -31,7 +31,6 @@ class Conversas extends Component {
 				</TouchableOpacity>
 			</View>
 		)
-
 	}
 
 	render() {
