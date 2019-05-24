@@ -40,7 +40,6 @@ class Contatos extends Component {
   render() {
     return (
       <ListView
-        style={{ backgroundColor: '#FFF' }}
         enableEmptySections
         dataSource={this.fonteDeDados}
         renderRow={this.renderRow}

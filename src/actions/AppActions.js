@@ -129,11 +129,10 @@ export const conversaUsuarioFetch = contatoEmail => {
   }
 }
 
-export const conversasUsuarioFetch = contatoEmail => {
+export const conversasUsuarioFetch = () => {
   const { currentUser } = firebase.auth();
 
   return dispatch => {
-   // let contatoEmailB64 = b64.encode(contatoEmail);
     let usuarioEmailB64 = b64.encode(currentUser.email);
 
     firebase.database().ref(`/usuario_conversas/${usuarioEmailB64}`)
