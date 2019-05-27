@@ -12,8 +12,8 @@ import {
 
 const INITIAL_STATE = {
   name: '',
-  email: 'vitoria@its4.com',
-  password: '123456',
+  email: '',
+  password: '',
   registerError: '',
   loadingLogin: false,
   loadingCadastro: false
@@ -32,7 +32,7 @@ export default (state = INITIAL_STATE, action) => {
     case CADASTRO_USER_ERROR:
       return { ...state, registerError: action.payload, loadingCadastro: false }
     case LOGIN_USER_SUCCESS:
-      return { ...state, name: '', password: '' }
+      return { ...state, ...INITIAL_STATE}
     case LOGIN_USER_ERROR:
       return { ...state, registerError: action.payload, loadingLogin: false }
     case LOGIN_EM_ANDAMENTO:

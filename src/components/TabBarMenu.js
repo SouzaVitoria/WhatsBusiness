@@ -3,6 +3,7 @@ import { View, Text, StatusBar, StyleSheet, Image, TouchableOpacity, SafeAreaVie
 import { TabBar } from 'react-native-tab-view';
 import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
+import firebase from 'firebase';
 import { habilitaInclusaoContato } from '../actions/AppActions';
 
 const TabBarMenu = props => {
@@ -28,7 +29,14 @@ const TabBarMenu = props => {
 
 					</View>
 					<View>
-						<Text style={{ fontSize: 20, marginHorizontal: 8, color: '#FFF' }}> Sair </Text>
+						<TouchableOpacity
+							onPress={() => {
+								firebase.auth().signOut()
+								.then(() => Actions.formLogin())
+							}}
+						>
+							<Text style={{ fontSize: 20, marginHorizontal: 8, color: '#FFF' }}> Sair </Text>
+						</TouchableOpacity>
 					</View>
 				</View>
 			</View>
