@@ -38,6 +38,12 @@ export const adicionaContato = email => {
 						.then(() => adicionaContatoSucesso(dispatch))
 						.catch(erro => adicionaContatoErro(erro.message, dispatch))
 				} else {
+					//if(snapshot.val() == ){
+						dispatch({
+							type: ADICIONA_CONTATO_ERRO,
+							payload: 'Esse usuário já esta na sua lista de contatos!'
+						});
+					//}
 					dispatch({
 						type: ADICIONA_CONTATO_ERRO,
 						payload: 'Nenhum usuário com este e-mail. Tente Novamente!'

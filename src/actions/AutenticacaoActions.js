@@ -10,7 +10,8 @@ import {
 	LOGIN_USER_SUCCESS,
 	LOGIN_USER_ERROR,
 	LOGIN_EM_ANDAMENTO,
-	CADASTRO_EM_ANDAMENTO
+	CADASTRO_EM_ANDAMENTO,
+	MODIFICA_USER
 } from './Types';
 
 export const modificaEmail = textEmail => {
@@ -27,6 +28,15 @@ export const modificaPassword = textPassword => {
 	}
 }
 
+export const modificaUser = textUser => {
+//	console.log("Action => ", textUser);
+	return {
+		type: MODIFICA_USER,
+		payload: textUser,
+		email: ''
+	}
+}
+
 export const modificaName = textName => {
 	return {
 		type: MODIFICA_NAME,
@@ -34,16 +44,16 @@ export const modificaName = textName => {
 	}
 }
 
-export const cadastraUser = ({ name, email, password }) => {
+export const cadastraUser = ({ name, email, password, user }) => {
 	return dispatch => {
 		dispatch({ type: CADASTRO_EM_ANDAMENTO });
 
 		firebase.auth().createUserWithEmailAndPassword(email, password)
-			.then(user => {
+			.then(() => {
 				let emailB64 = b64.encode(email);
 				firebase.database().ref(`/contatos/${emailB64}`)
-					.push({ name })
-					.then(value => cadastroUserSuccess(dispatch));
+					.push({ name, user })
+					.then(() => cadastroUserSuccess(dispatch));
 			})
 			.catch(erro => cadastroUserError(erro, dispatch));
 	}
@@ -63,7 +73,7 @@ export const autenticarUser = ({ email, password }) => {
 		dispatch({ type: LOGIN_EM_ANDAMENTO });
 
 		firebase.auth().signInWithEmailAndPassword(email, password)
-			.then(value => {
+			.then(() => {
 				dispatch({ type: LOGIN_USER_SUCCESS });
 				Actions.formPrincipal();
 			})

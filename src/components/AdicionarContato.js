@@ -8,7 +8,9 @@ class AdicionarContato extends Component {
 	_renderBtnSalvar() {
 		if (this.props.loadingAdicionaContato) {
 			return (
-				<ActivityIndicator />
+				<View style={styles.loading}>
+					<ActivityIndicator size="large" />
+				</View>
 			)
 		} else {
 			return (
@@ -58,6 +60,15 @@ class AdicionarContato extends Component {
 	}
 }
 
+const mapStateToProps = state => (
+	{
+		adiciona_contato_email: state.AppReducer.adiciona_contato_email,
+		cadastro_resultado_txt_erro: state.AppReducer.cadastro_resultado_txt_erro,
+		cadastro_resultado_inclusao: state.AppReducer.cadastro_resultado_inclusao,
+		loadingAdicionaContato: state.AppReducer.loadingAdicionaContato
+	}
+)
+
 const styles = StyleSheet.create({
 	input: {
 		fontSize: 20,
@@ -79,16 +90,11 @@ const styles = StyleSheet.create({
 		padding: 10,
 		marginTop: 40,
 		marginHorizontal: 40
+	},
+	loading: {
+		padding: 10,
+		margin: 40
 	}
 })
-
-const mapStateToProps = state => (
-	{
-		adiciona_contato_email: state.AppReducer.adiciona_contato_email,
-		cadastro_resultado_txt_erro: state.AppReducer.cadastro_resultado_txt_erro,
-		cadastro_resultado_inclusao: state.AppReducer.cadastro_resultado_inclusao,
-		loadingAdicionaContato: state.AppReducer.loadingAdicionaContato
-	}
-)
 
 export default connect(mapStateToProps, { modificaAdicionaContatoEmail, adicionaContato })(AdicionarContato);
