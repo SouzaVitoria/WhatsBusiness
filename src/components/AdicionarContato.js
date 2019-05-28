@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { modificaAdicionaContatoEmail, adicionaContato } from '../actions/AppActions';
 
 class AdicionarContato extends Component {
-
 	_renderBtnSalvar() {
 		if (this.props.loadingAdicionaContato) {
 			return (
@@ -31,7 +30,6 @@ class AdicionarContato extends Component {
 					<TextInput
 						style={styles.input}
 						placeholder='E-mail'
-						color='#000'
 						value={this.props.adiciona_contato_email.toLowerCase()}
 						onChangeText={textoModificaAdicionaContato => this.props.modificaAdicionaContatoEmail(textoModificaAdicionaContato)}
 					/>
@@ -44,7 +42,7 @@ class AdicionarContato extends Component {
 			)
 		} else {
 			return (
-				<View style={{ flex: 1, backgroundColor: '#FFF' }}>
+				<View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }}>
 					<Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> Contato adicionado com sucesso! </Text>
 				</View>
 			)
