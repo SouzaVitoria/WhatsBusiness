@@ -24,7 +24,7 @@ class AdicionarContato extends Component {
 	}
 
 	_renderAdicionarContato() {
-		if (!this.props.cadastro_resultado_inclusao) {
+		if (this.props.cadastro_resultado_inclusao) {
 			return (
 				<View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }}>
 					<TextInput
@@ -42,8 +42,8 @@ class AdicionarContato extends Component {
 			)
 		} else {
 			return (
-				<View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center' }}>
-					<Text style={{ color: '#FF0000', fontSize: 18, marginHorizontal: 30, marginVertical: 10 }}> Contato adicionado com sucesso! </Text>
+				<View style={{ flex: 1, backgroundColor: '#FFF', justifyContent: 'center', alignItems: 'center' }}>
+					<Text style={{ color: '#FF0000', fontSize: 21, marginHorizontal: 30, marginVertical: 10 }}> Contato adicionado com sucesso! </Text>
 				</View>
 			)
 		}
